@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 
 function App() {
   const [language, setLanguage] = useState("EN");
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleLanguage = () => {
     setLanguage(language === "EN" ? "GE" : "EN");
@@ -52,7 +53,7 @@ function App() {
               </div>
             </div>
 
-            {/* Navigation Items */}
+            {/* Navigation Items - Desktop */}
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
                 {navItems.map((item, index) => (
@@ -67,14 +68,58 @@ function App() {
               </div>
             </div>
 
-            {/* Language Switcher */}
-            <div className="flex items-center">
+            {/* Language Switcher - Desktop */}
+            <div className="hidden md:flex items-center">
               <button
                 onClick={toggleLanguage}
                 className="bg-georgian-red text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-red-700 transition-colors duration-200"
               >
                 {language === "EN" ? "GE" : "EN"}
               </button>
+            </div>
+
+            {/* Mobile menu button */}
+            <div className="md:hidden flex items-center space-x-2">
+              <button
+                onClick={toggleLanguage}
+                className="bg-georgian-red text-white px-3 py-1 rounded text-sm font-medium hover:bg-red-700 transition-colors duration-200"
+              >
+                {language === "EN" ? "GE" : "EN"}
+              </button>
+              <button
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                className="text-white hover:text-gray-200 focus:outline-none focus:text-gray-200"
+              >
+                <svg
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          {/* Mobile menu */}
+          <div className={`md:hidden ${mobileMenuOpen ? "block" : "hidden"}`}>
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-red-600">
+              {navItems.map((item, index) => (
+                <a
+                  key={index}
+                  href={`#${item.en.toLowerCase().replace(" ", "-")}`}
+                  className="text-white hover:text-gray-200 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {language === "EN" ? item.en : item.ge}
+                </a>
+              ))}
             </div>
           </div>
         </div>
