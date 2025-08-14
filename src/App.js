@@ -151,11 +151,11 @@ function App() {
             <p className="text-xl md:text-2xl max-w-4xl mx-auto leading-relaxed">
               {heroContent[language].description}
             </p>
-            <div className="mt-12">
-              <button className="bg-georgian-red text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-red-700 transition-colors duration-200 mr-4">
+            <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <button className="bg-georgian-red text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-red-700 transition-colors duration-200 w-full sm:w-auto">
                 {language === "EN" ? "Learn More" : "მეტის ნახვა"}
               </button>
-              <button className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-black transition-colors duration-200">
+              <button className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-black transition-colors duration-200 w-full sm:w-auto">
                 {language === "EN"
                   ? "Join Memory Walk"
                   : "შეუერთდი მეხსიერების ფეხით სიარულს"}
