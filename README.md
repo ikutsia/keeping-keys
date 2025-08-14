@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# I Keep Keys to My Home - მე ვინახავ ჩემი სახლის გასაღებს
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A powerful and moving website dedicated to commemorating the victims of the 1993 exodus of Georgians from Abkhazia and honoring the survivors of the death road through Svanetian mountains.
 
-## Available Scripts
+## About the Movement
 
-In the project directory, you can run:
+"I Keep Keys to My Home" is a social movement that serves as a memorial to those who lost their lives during the 1993 ethnic violence and genocide in Abkhazia. The movement honors the courage of up to 100,000 Georgians who were forced to flee their homes and undertook a perilous journey through the Svanetian mountains in search of safety and survival.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Bilingual Support**: Full English and Georgian language support
+- **Responsive Design**: Modern, mobile-friendly interface built with Tailwind CSS
+- **Interactive Sections**: 
+  - Hero section with powerful imagery and messaging
+  - Historical documentation and survivor stories
+  - Annual Memory Walk information and registration
+  - Photo gallery with historical images
+  - Blog with community stories and updates
+  - Contact form and information
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Annual Memory Walk
 
-### `npm test`
+The website features information about the annual "Memory Walk" - a commemorative hike through the Caucasus mountains that retraces the route taken by survivors in 1993. This event serves as both a memorial and an educational experience for participants.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technology Stack
 
-### `npm run build`
+- **Frontend**: React.js
+- **Styling**: Tailwind CSS
+- **Languages**: English and Georgian
+- **Fonts**: Noto Sans Georgian for proper Georgian text rendering
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm start
+   ```
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Design Philosophy
 
-### `npm run eject`
+The website uses a solemn color scheme of red and black to reflect the gravity of the historical events while maintaining hope and dignity. The design emphasizes:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Accessibility**: Clear navigation and readable typography
+- **Cultural Sensitivity**: Respectful presentation of historical events
+- **Community Focus**: Easy ways to connect and participate
+- **Educational Value**: Comprehensive information about the 1993 events
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contributing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+We welcome contributions from the community, especially:
+- Historical accuracy improvements
+- Additional survivor stories
+- Translation improvements
+- Design enhancements
+- Accessibility improvements
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contact
 
-## Learn More
+For questions about the movement or website:
+- Email: info@keepingkeys.org
+- Location: Tbilisi, Georgia
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project is dedicated to the memory of the victims and survivors of the 1993 Georgian exodus from Abkhazia.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+*"We keep the keys to our homes as a symbol of hope and determination to return one day."*
